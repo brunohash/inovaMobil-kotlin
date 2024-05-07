@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whatsapp_image_2024_05_06_at_22_35_51"
+    android:orientation="vertical"
+    android:padding="30sp"
+    android:paddingTop="?attr/actionBarSize">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="114dp" />
+
+    <TextView
+        android:id="@+id/FraseEntrada1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seja bem vindo(a) ao"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/FraseEntrada2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="InovaMobil"
+        android:textAlignment="textEnd"
+        android:textColor="#FFAB40"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="72dp" />
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Insira seu login"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:rotationX="-13"
+        android:textAlignment="center"
+        android:textColor="#FAF8F8"
+        android:textColorHint="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Insira sua senha"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:rotationX="-13"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="22dp" />
+
+    <Button
+        android:id="@+id/buttonEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#314751"
+        android:backgroundTint="#314751"
+        android:onClick="ButtonRegister"
+        android:text="Entrar"
+        android:textAlignment="center"
+        app:strokeColor="#314751" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="18dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20sp"
+        android:text="Não possui uma conta?"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Registrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B32525"
+        android:minHeight="48dp"
+        android:text="REGISTRAR" />
+
+</LinearLayout>
