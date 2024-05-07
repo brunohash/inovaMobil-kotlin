@@ -74,7 +74,7 @@
         android:layout_height="wrap_content"
         android:background="#314751"
         android:backgroundTint="#314751"
-        android:onClick="ButtonRegister"
+        android:onClick="authentication"
         android:text="Entrar"
         android:textAlignment="center"
         app:strokeColor="#314751" />

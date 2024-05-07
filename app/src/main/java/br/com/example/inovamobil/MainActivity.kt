@@ -1,8 +1,8 @@
 package br.com.example.inovamobil
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 
@@ -10,7 +10,6 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var login: EditText
     private lateinit var password: EditText
-    private lateinit var loginButton: Button
     private var inputLogin: String = ""
     private var inputPassword: String = ""
 
@@ -18,28 +17,24 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Log.d("LoginActivity", "Inicializando...")
+        Log.d("InovaMobilLogs", "Inicializando...")
 
         login = findViewById(R.id.login)
         password = findViewById(R.id.password)
-        loginButton = findViewById(R.id.buttonEntry)
-
-        loginButton.setOnClickListener {
-            inputLogin = login.text.toString()
-            inputPassword = password.text.toString()
-            authentication(inputLogin, inputPassword)
-        }
     }
 
-    fun ButtonRegister(view: android.view.View) {
-        authentication(inputLogin, inputPassword)
-    }
+    fun authentication(view: android.view.View) {
+        inputLogin = login.text.toString()
+        inputPassword = password.text.toString()
 
-    private fun authentication(inputLogin: String, inputPassword: String) {
-        if (inputLogin == "bruno" && inputPassword == "123") {
-            Log.d("LoginActivity", "Login successful")
+        if (inputLogin == "admin" && inputPassword == "admin") {
+            Log.d("InovaMobilLogs", "Login successful")
+
+            // Exemplo de iniciar a tela Home usando Intent
+            val homeScreenIntent = Intent(this, Home::class.java)
+            startActivity(homeScreenIntent)
         } else {
-            Log.d("LoginActivity", "Invalid login or password")
+            Log.d("InovaMobilLogs", "Invalid login or password")
         }
     }
 }
